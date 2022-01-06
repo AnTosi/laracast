@@ -1,0 +1,96 @@
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+ul li {
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #344a71;
+  height: 60px;
+}
+
+header .logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 6px;
+  padding: 11.25px 30px;
+}
+
+header .center_nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .center_nav ul {
+  height: 100%;
+}
+
+header .center_nav ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  color: white;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+header .center_nav ul li:hover {
+  opacity: 1;
+  border-bottom: 5px solid white;
+  color: white;
+  transition-timing-function: ease;
+}
+
+header .search_area {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+header .search_area div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header .search_area .lens {
+  margin-top: 11.25px;
+  margin-bottom: 11.25px;
+  height: 38.5px;
+  width: 38.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 30%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+header .search_area .lens:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+

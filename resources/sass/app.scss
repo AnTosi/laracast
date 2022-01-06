@@ -1,0 +1,97 @@
+//
+//colors:
+
+$main-blue: rgba(52, 74, 113, 1);
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    
+    li {
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-blue;
+    height: 60px;
+
+    .logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 6px;
+    padding: 11.25px 30px;
+    }
+
+    .center_nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        ul {
+            height: 100%;
+            li {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 5px solid transparent;
+                border-top: 5px solid transparent;
+                color: white;
+                opacity: 0.5;
+                font-weight: 500;
+                &:hover {
+                opacity: 1;
+                border-bottom: 5px solid white;
+                color: white;
+                transition-timing-function: ease;
+                }
+            }
+
+        }
+    }
+
+    .search_area {
+        color: white;
+        display: flex;
+        align-items: center;
+        div {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .lens {
+            margin-top: 11.25px;
+            margin-bottom: 11.25px;
+            height: 38.5px;
+            width: 38.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            border-radius: 30%;
+            background-color: rgba(255, 255, 255, 0.1);
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.25);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
