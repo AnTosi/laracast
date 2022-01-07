@@ -3,6 +3,9 @@
 
 $main-blue: rgba(52, 74, 113, 1);
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
 ul {
     display: flex;
     list-style: none;
@@ -30,14 +33,18 @@ header {
     align-items: center;
     background-color: $main-blue;
     height: 60px;
+    font-size: 0.9rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
 
     .logo {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: white;
     font-weight: 700;
-    letter-spacing: 6px;
-    padding: 11.25px 30px;
+    letter-spacing: 4px;
+    padding: 11.25px 0;
     }
 
     .center_nav {
@@ -52,15 +59,24 @@ header {
                 align-items: center;
                 border-bottom: 5px solid transparent;
                 border-top: 5px solid transparent;
-                color: white;
-                opacity: 0.5;
-                font-weight: 500;
+                color: rgba(255, 255, 255, 0.500);
                 &:hover {
-                opacity: 1;
                 border-bottom: 5px solid white;
                 color: white;
                 transition-timing-function: ease;
+                position: relative;
                 }
+
+                .new_bubble {
+                    align-self: flex-start;
+
+                    font-size: 0.6rem;
+                    padding: 0.1rem;
+                    border-radius: 0.5rem;
+                    background-color: white;
+                    color: $main-blue;
+                }
+                
             }
 
         }
@@ -69,11 +85,10 @@ header {
     .search_area {
         color: white;
         display: flex;
+        justify-content: flex-end;
         align-items: center;
-        div {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+        font-size: 0.8rem;
+
         .lens {
             margin-top: 11.25px;
             margin-bottom: 11.25px;
@@ -90,6 +105,28 @@ header {
                 cursor: pointer;
             }
         }
+        .sign_in {
+            margin-left: 1.4rem;
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        button {
+            margin-left: 1.4rem;
+            border-style: none;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            padding: 0.4rem 0.6rem;
+            border-radius: 1.2rem;
+            &:hover {
+                background-color: white;
+                color: rgba(50,138,241);
+            }
+        }
+
     }
 }
 
