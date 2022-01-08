@@ -1,7 +1,8 @@
 //
 //colors:
 
-$main-blue: rgba(52, 74, 113, 1);
+$main_blue: rgba(52, 74, 113, 1);
+$light_grey: rgba(0, 0, 0, 0.3);
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -31,7 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $main-blue;
+    background-color: $main_blue;
     height: 60px;
     font-size: 0.9rem;
     padding-left: 30px;
@@ -74,7 +75,7 @@ header {
                     padding: 0.1rem;
                     border-radius: 0.5rem;
                     background-color: white;
-                    color: $main-blue;
+                    color: $main_blue;
                 }
                 
             }
@@ -130,5 +131,75 @@ header {
     }
 }
 
+section {
+    padding: 40px 30px;
+    background-color: rgb(239, 242, 246);
+    .title_container {
+        max-width: 650px;
+        margin: auto;
+        h3.section_title {
+            text-align: center;
+            font-family: 'Cabin', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .in_evidence {
+        max-width: 1166px;
+        border-radius: 0.8rem;
+        height: 363px;
+        padding: 2rem 3rem;
+        background-color: white;
+        margin: auto;
+
+        .left_container {
+            max-width: 650px;
+
+            span.topic {
+                color: white;
+                font-size: 0.65rem;
+                font-weight: 700;
+                padding: 0.4rem 1.4rem;
+                border-radius: 1rem;
+                margin-bottom: 0.75rem;
+                display: inline-block;
+    
+                &.frameworks {
+                    background-color: rgb(236, 69, 79);
+                }
+            }
+    
+            h4 {
+                font-family: 'Cabin', sans-serif;
+                font-size: 1.7rem;
+                font-weight: 400;
+            }
+
+        }
+
+        .grey_line {
+            background-color: $light_grey;
+            display: inline-block;
+            width: 7.5px;
+            height: 3.75px;
+            border-radius: 3px;
+            margin-bottom: 3px;
+        }
+
+        .info_text {
+            max-width: 60px;
+            font-size: 0.65rem;
+            color: $light_grey;  
+        }
+
+        i {
+            color: $light_grey;
+        }
+    }
+}
 
 

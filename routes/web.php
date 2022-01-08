@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $recents = config('db.recents');
+    return view('index', compact('recents'));
 });

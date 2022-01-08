@@ -130,3 +130,76 @@ header .search_area button:hover {
   color: #328af1;
 }
 
+section {
+  padding: 40px 30px;
+  background-color: #eff2f6;
+}
+
+section .title_container {
+  max-width: 650px;
+  margin: auto;
+}
+
+section .title_container h3.section_title {
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+section .title_container p {
+  font-size: 1.1rem;
+}
+
+section .in_evidence {
+  max-width: 1166px;
+  border-radius: 0.8rem;
+  height: 363px;
+  padding: 2rem 3rem;
+  background-color: white;
+  margin: auto;
+}
+
+section .in_evidence .left_container {
+  max-width: 650px;
+}
+
+section .in_evidence .left_container span.topic {
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.4rem 1.4rem;
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+section .in_evidence .left_container span.topic.frameworks {
+  background-color: #ec454f;
+}
+
+section .in_evidence .left_container h4 {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+section .in_evidence .grey_line {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 7.5px;
+  height: 3.75px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+section .in_evidence .info_text {
+  max-width: 60px;
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+section .in_evidence i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
