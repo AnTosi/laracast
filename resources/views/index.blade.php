@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!-- section 1 recently updated in evidence -->
+
 <section id="section_1">
     <div class="title_container mb-4">
         <h3 class="section_title mb-3">Recently Updated</h3>
@@ -12,7 +15,7 @@
             @break
         @endif
 
-        <div class="in_evidence">
+        <div class="in_evidence container card_border">
             <div class="left_container">
                 <span class="topic {{$recent['topic']}}">
                     {{ strtoupper($recent["topic"]) }}
@@ -48,5 +51,31 @@
             <img src="{{$recent['img']}}" alt="">
         </div>
     @endforeach
+
 </section>
+
+<!-- //section 1 recently updated in evidence -->
+
+<!-- section 2 recently updated not in evidence -->
+
+<section id="section_2">
+    <div class="blue_background container card_border">
+        <h5 class="text-white text-center mb-4">
+            More Recently Updated Series
+        </h5>
+
+        <div class="flex_container d-flex flex-wrap">
+            @for ($i = 2; $i < count($recents); $i++)
+                <div class="card py-2 px-3 bg_darker d-flex flex-column align-items-center">
+                    <img src="{{$recents[$i]['img']}}" alt="">
+                    <h6 class="text-white my-4">{{substr($recents[$i]['title'], 0, 22)}}...</h6>
+                </div>
+            @endfor
+
+        </div>
+        
+    </div>
+</section>
+
+<!-- section 2 recently updated not in evidence -->
 @endsection

@@ -2,17 +2,40 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  max-width: 1166px;
+}
+
+.blue_background {
+  background-image: linear-gradient(90deg, #324466, #60799e 79%);
+}
+
+.card_border {
+  border-radius: 0.8rem;
+}
+
+.bg_darker {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
 button.start_series {
   border-style: none;
   border-radius: 1.5rem;
   width: 210px;
   padding: 0.5rem 0;
   font-size: 0.9rem;
+  border: 1px;
 }
 
 button.start_series i {
-  color: black !important;
+  color: inherit;
   margin-right: 0.5rem;
+}
+
+button.start_series:hover {
+  color: #328af1;
+  border: 1px solid #328af1;
+  background-color: ButtonFace;
 }
 
 ul {
@@ -144,28 +167,30 @@ header .search_area button:hover {
 }
 
 section {
-  padding: 40px 30px;
   background-color: #eff2f6;
 }
 
-section .title_container {
+#section_1 {
+  padding: 40px 30px;
+}
+
+#section_1 .title_container {
   max-width: 650px;
   margin: auto;
 }
 
-section .title_container h3.section_title {
+#section_1 .title_container h3.section_title {
   text-align: center;
   font-family: "Cabin", sans-serif;
   font-size: 2.2rem;
   font-weight: 400;
 }
 
-section .title_container p {
+#section_1 .title_container p {
   font-size: 1.1rem;
 }
 
-section .in_evidence {
-  max-width: 1166px;
+#section_1 .in_evidence {
   border-radius: 0.8rem;
   height: 363px;
   padding: 2rem 3rem;
@@ -176,11 +201,11 @@ section .in_evidence {
   margin-top: 30px;
 }
 
-section .in_evidence .left_container {
+#section_1 .in_evidence .left_container {
   max-width: 650px;
 }
 
-section .in_evidence .left_container span.topic {
+#section_1 .in_evidence .left_container span.topic {
   color: white;
   font-size: 0.65rem;
   font-weight: 700;
@@ -190,17 +215,21 @@ section .in_evidence .left_container span.topic {
   display: inline-block;
 }
 
-section .in_evidence .left_container span.topic.frameworks {
+#section_1 .in_evidence .left_container span.topic.frameworks {
   background-color: #ec454f;
 }
 
-section .in_evidence .left_container h4 {
+#section_1 .in_evidence .left_container span.topic.tooling {
+  background-color: #8b60ed;
+}
+
+#section_1 .in_evidence .left_container h4 {
   font-family: "Cabin", sans-serif;
   font-size: 1.7rem;
   font-weight: 400;
 }
 
-section .in_evidence .grey_line {
+#section_1 .in_evidence .course_info .grey_line {
   background-color: rgba(0, 0, 0, 0.3);
   display: inline-block;
   width: 7.5px;
@@ -209,17 +238,17 @@ section .in_evidence .grey_line {
   margin-bottom: 3px;
 }
 
-section .in_evidence .info_text {
+#section_1 .in_evidence .course_info .info_text {
   max-width: 60px;
   font-size: 0.65rem;
   color: rgba(0, 0, 0, 0.3);
 }
 
-section .in_evidence i {
+#section_1 .in_evidence .course_info i {
   color: rgba(0, 0, 0, 0.3);
 }
 
-section .in_evidence img {
+#section_1 .in_evidence img {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -229,5 +258,29 @@ section .in_evidence img {
   -o-object-fit: contain;
      object-fit: contain;
   overflow: hidden;
+}
+
+#section_2 div.container {
+  padding: 45px 22.5px;
+  height: 522px;
+}
+
+#section_2 div.container h5 {
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  font-family: "Cabin", sans-serif;
+}
+
+#section_2 div.container .card {
+  width: 202px;
+}
+
+#section_2 div.container .card img {
+  height: 64px;
+}
+
+#section_2 div.container .card h6 {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 

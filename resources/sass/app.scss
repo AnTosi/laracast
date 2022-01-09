@@ -3,9 +3,27 @@
 
 $main_blue: rgba(52, 74, 113, 1);
 $light_grey: rgba(0, 0, 0, 0.3);
+$highlight_blue: rgba(50,138,241);
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1166px;
+}
+
+.blue_background {
+
+    background-image: linear-gradient(90deg, rgb(50, 68, 102), rgb(96, 121, 158) 79%);
+}
+
+.card_border {
+    border-radius: 0.8rem;
+}
+
+.bg_darker {
+    background-color: rgba(0,0,0,.03);
 }
 
 button.start_series {
@@ -14,10 +32,18 @@ button.start_series {
     width: 210px;
     padding: 0.5rem 0;
     font-size: 0.9rem;
+    border: 1px;
 
     i {
-        color: black !important;
+        color: inherit;
         margin-right: 0.5rem;
+
+    }
+
+    &:hover {
+        color: $highlight_blue;
+        border: 1px solid $highlight_blue;
+        background-color: ButtonFace;
     }
 }
 
@@ -138,7 +164,7 @@ header {
             border-radius: 1.2rem;
             &:hover {
                 background-color: white;
-                color: rgba(50,138,241);
+                color: $highlight_blue;
             }
         }
 
@@ -146,8 +172,11 @@ header {
 }
 
 section {
-    padding: 40px 30px;
     background-color: rgb(239, 242, 246);
+}
+
+#section_1{
+    padding: 40px 30px;
     .title_container {
         max-width: 650px;
         margin: auto;
@@ -163,7 +192,6 @@ section {
     }
 
     .in_evidence {
-        max-width: 1166px;
         border-radius: 0.8rem;
         height: 363px;
         padding: 2rem 3rem;
@@ -172,7 +200,7 @@ section {
         overflow: hidden;
         position: relative;
         margin-top: 30px;
-        
+
         .left_container {
             max-width: 650px;
 
@@ -188,6 +216,10 @@ section {
                 &.frameworks {
                     background-color: rgb(236, 69, 79);
                 }
+
+                &.tooling {
+                    background-color: rgb(139, 96, 237);
+                }
             }
     
             h4 {
@@ -198,24 +230,27 @@ section {
 
         }
 
-        .grey_line {
-            background-color: $light_grey;
-            display: inline-block;
-            width: 7.5px;
-            height: 3.75px;
-            border-radius: 3px;
-            margin-bottom: 3px;
+        .course_info {
+            .grey_line {
+                background-color: $light_grey;
+                display: inline-block;
+                width: 7.5px;
+                height: 3.75px;
+                border-radius: 3px;
+                margin-bottom: 3px;
+            }
+            .info_text {
+                max-width: 60px;
+                font-size: 0.65rem;
+                color: $light_grey;  
+            }
+    
+            i {
+                color: $light_grey;
+            }
+            
         }
 
-        .info_text {
-            max-width: 60px;
-            font-size: 0.65rem;
-            color: $light_grey;  
-        }
-
-        i {
-            color: $light_grey;
-        }
             
         img {
             object-fit: cover;
@@ -225,6 +260,28 @@ section {
             width: 500px;
             object-fit: contain;
             overflow: hidden;
+        }
+    }
+}
+
+#section_2{
+    div.container {
+        padding: 45px 22.5px;
+        height: 522px;
+            h5 {
+                font-size: 1rem;
+                letter-spacing: 0.02rem;
+                font-family: 'Cabin', sans-serif;
+            }
+        .card {
+            width: 202px;
+            img {
+                height: 64px;
+            }
+            h6 {
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
         }
     }
 }
