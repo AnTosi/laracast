@@ -155,6 +155,8 @@ section {
         padding: 2rem 3rem;
         background-color: white;
         margin: auto;
+        overflow: hidden;
+        position: relative;
 
         .left_container {
             max-width: 650px;
@@ -199,6 +201,17 @@ section {
         i {
             color: $light_grey;
         }
+            
+        img {
+            object-fit: cover;
+            position: absolute;
+            right: -163px;
+            top: -49px;
+            width: 500px;
+            object-fit: contain;
+            overflow: hidden;
+        }
+
     }
 }
 

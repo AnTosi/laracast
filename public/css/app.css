@@ -158,6 +158,8 @@ section .in_evidence {
   padding: 2rem 3rem;
   background-color: white;
   margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 
 section .in_evidence .left_container {
@@ -201,5 +203,17 @@ section .in_evidence .info_text {
 
 section .in_evidence i {
   color: rgba(0, 0, 0, 0.3);
+}
+
+section .in_evidence img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  right: -163px;
+  top: -49px;
+  width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
 }
 
