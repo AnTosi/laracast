@@ -20,7 +20,7 @@
                 <h4>
                     {{ $recent["title"] }}
                 </h4>
-                <p class="text-muted mb-5 mt-4">
+                <p class="text-muted my-4">
                     {{ substr($recent["text"], 0, 259) }}...
                 </p>
                 <div class="course_info d-flex">
@@ -41,8 +41,11 @@
                         <p class="mx-2 my-0 info_text"> {{$recent["time"]}} </p>
                     </div>
                 </div>
+                <button class="start_series my-4">
+                    <a href="#"><i class="far fa-play-circle"></i>Start Series</a>
+                </button>
             </div>
-                <img src="{{$recent['img']}}" alt="">
+            <img src="{{$recent['img']}}" alt="">
         </div>
     @endforeach
 </section>

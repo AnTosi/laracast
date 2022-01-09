@@ -2,6 +2,19 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+button.start_series {
+  border-style: none;
+  border-radius: 1.5rem;
+  width: 210px;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+button.start_series i {
+  color: black !important;
+  margin-right: 0.5rem;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -160,6 +173,7 @@ section .in_evidence {
   margin: auto;
   overflow: hidden;
   position: relative;
+  margin-top: 30px;
 }
 
 section .in_evidence .left_container {
